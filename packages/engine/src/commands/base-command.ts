@@ -1,4 +1,4 @@
-import { Blueprint, EntityId } from "@kycell/blueprint";
+import { Blueprint, EntityId } from "@kicell/blueprint";
 import { GameState } from "../game-state.js";
 import { UIEventHandler } from "../ui-events.js";
 import { InventorySystem } from "../inventory-system.js";

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { GameEngine } from "@kycell/engine";
+import { GameEngine } from "@kicell/engine";
 import {
   createNarrator,
   createNaturalLanguageProcessor,
   createConversationHandler,
-} from "@kycell/engine/dist/ai/index.js";
+} from "@kicell/engine/dist/ai/index.js";
 import { readFileSync } from "fs";
 import { resolve } from "path";
 import { config } from "dotenv";
@@ -33,7 +33,10 @@ async function main() {
   });
 
   // Make debug function available globally
-  (globalThis as any).debug = (message: string, level?: 'info' | 'warn' | 'error') => {
+  (globalThis as any).debug = (
+    message: string,
+    level?: "info" | "warn" | "error"
+  ) => {
     engine.debug(message, level);
   };
 

@@ -1,5 +1,5 @@
 import { Thing } from "./thing.js";
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Supporter class - things that support other things on top of them

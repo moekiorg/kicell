@@ -23,7 +23,7 @@ export function parseArguments(args: string[]): AppConfig {
 }
 
 function showHelp(): void {
-  console.log(`🎮 KyCell - Immersive Text Game Engine
+  console.log(`🎮 kicell - Immersive Text Game Engine
 
 使用方法:
   pnpm play [scenario-file] [options]

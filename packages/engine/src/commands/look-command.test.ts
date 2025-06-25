@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { LookCommand } from "./look-command.js";
 import { GameState } from "../game-state.js";
-import { Blueprint } from "@kycell/blueprint";
+import { Blueprint } from "@kicell/blueprint";
 import { InventorySystem } from "../inventory-system.js";
 
 describe("LookCommand", () => {

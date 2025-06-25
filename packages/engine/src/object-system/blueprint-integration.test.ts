@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { Blueprint } from "@kycell/blueprint";
+import { Blueprint } from "@kicell/blueprint";
 import { BlueprintConverter } from "./blueprint-converter.js";
 import { EnhancedGameEngine } from "./enhanced-game-engine.js";
 import { Container, Supporter } from "./index.js";

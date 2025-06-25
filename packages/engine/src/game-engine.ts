@@ -1,4 +1,4 @@
-import { Blueprint, EntityId } from "@kycell/blueprint";
+import { Blueprint, EntityId } from "@kicell/blueprint";
 import { GameState } from "./game-state.js";
 import { CommandProcessor } from "./command-processor.js";
 import { CommandResult } from "./commands/index.js";

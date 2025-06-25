@@ -1,6 +1,6 @@
 {
-  "name": "@kycell/engine",
-  "version": "1.0.0",
+  "name": "@kicell/engine",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,9 +17,19 @@
   ],
   "license": "MIT",
   "description": "Game engine for executing immersive text game blueprints",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moekiorg/kicell.git",
+    "directory": "packages/engine"
+  },
+  "homepage": "https://github.com/moekiorg/kicell#readme",
+  "bugs": {
+    "url": "https://github.com/moekiorg/kicell/issues"
+  },
+  "author": "Moeki Kawakami",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "@kycell/blueprint": "workspace:*",
+    "@kicell/blueprint": "workspace:*",
     "dotenv": "^16.5.0"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { Thing } from "./thing.js";
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Room class - represents a location/place in the game world

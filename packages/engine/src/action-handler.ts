@@ -1,4 +1,4 @@
-import { Blueprint, Effect, Condition } from "@kycell/blueprint";
+import { Blueprint, Effect, Condition } from "@kicell/blueprint";
 import {
   GameContext,
   INarrator,

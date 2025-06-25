@@ -1,5 +1,5 @@
 import * as readline from "readline";
-import { GameEngine } from "@kycell/engine";
+import { GameEngine } from "@kicell/engine";
 import { CLISaveManager } from "./save-manager.js";
 import { handleCLICommands } from "./cli-command-handler.js";
 

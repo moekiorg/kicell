@@ -1,9 +1,4 @@
-import {
-  Blueprint,
-  GameObject,
-  Location,
-  Character,
-} from "@kycell/blueprint";
+import { Blueprint, GameObject, Location, Character } from "@kicell/blueprint";
 import { SpatialManager } from "./spatial-manager.js";
 import {
   Thing,

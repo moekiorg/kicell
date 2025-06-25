@@ -1,5 +1,5 @@
 import { Thing } from "./thing.js";
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Vehicle class - things that can be used for transportation

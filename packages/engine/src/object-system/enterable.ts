@@ -1,5 +1,5 @@
 import { Thing } from "./thing.js";
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Enterable class - things that can be entered by the player or other things

@@ -1,4 +1,4 @@
-import { Blueprint, ActionRule } from "@kycell/blueprint";
+import { Blueprint, ActionRule } from "@kicell/blueprint";
 import { AIProviderConfig, GameContext } from "./types.js";
 import { GeminiProvider } from "./providers/gemini-provider.js";
 

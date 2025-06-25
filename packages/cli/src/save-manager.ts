@@ -1,7 +1,7 @@
-import { GameEngine, SaveLoadSystem } from "@kycell/engine";
-import fs from 'fs/promises';
-import path from 'path';
-import { homedir } from 'os';
+import { GameEngine, SaveLoadSystem } from "@kicell/engine";
+import fs from "fs/promises";
+import path from "path";
+import { homedir } from "os";
 
 export class CLISaveManager {
   private saveLoadSystem: SaveLoadSystem;
@@ -9,7 +9,7 @@ export class CLISaveManager {
 
   constructor() {
     this.saveLoadSystem = new SaveLoadSystem();
-    this.saveDir = path.join(homedir(), '.kycell', 'saves');
+    this.saveDir = path.join(homedir(), ".kicell", "saves");
   }
 
   async saveGame(engine: GameEngine, filename?: string): Promise<string> {
@@ -25,18 +25,22 @@ export class CLISaveManager {
 
   async loadGame(engine: GameEngine, filename: string): Promise<void> {
     const savePath = path.join(this.saveDir, filename);
-    
+
     const gameState = engine.getGameState();
     const inventorySystem = engine.getInventorySystem();
 
-    await this.saveLoadSystem.loadFromFile(savePath, gameState, inventorySystem);
+    await this.saveLoadSystem.loadFromFile(
+      savePath,
+      gameState,
+      inventorySystem
+    );
   }
 
   async getLatestSaveFile(): Promise<string | null> {
     try {
       const files = await fs.readdir(this.saveDir);
-      const saveFiles = files.filter(file => file.endsWith('.json'));
-      
+      const saveFiles = files.filter((file) => file.endsWith(".json"));
+
       if (saveFiles.length === 0) {
         return null;
       }
@@ -52,7 +56,7 @@ export class CLISaveManager {
 
       // Sort by modification time (newest first)
       fileStats.sort((a, b) => b.mtime.getTime() - a.mtime.getTime());
-      
+
       return fileStats[0].file;
     } catch (error) {
       return null;
@@ -61,7 +65,7 @@ export class CLISaveManager {
 
   async loadLatestSave(engine: GameEngine): Promise<boolean> {
     const latestFile = await this.getLatestSaveFile();
-    
+
     if (!latestFile) {
       return false;
     }
@@ -77,7 +81,7 @@ export class CLISaveManager {
   async listSaveFiles(): Promise<string[]> {
     try {
       const files = await fs.readdir(this.saveDir);
-      return files.filter(file => file.endsWith('.json'));
+      return files.filter((file) => file.endsWith(".json"));
     } catch (error) {
       return [];
     }

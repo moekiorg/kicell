@@ -1,7 +1,7 @@
 import { Thing, Supporter, Enterable, SpatialRelation } from "./index.js";
 import { Room } from "./room.js";
 import { Container } from "./container.js";
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Manages spatial relationships between objects in the game world

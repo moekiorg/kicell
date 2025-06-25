@@ -1,6 +1,6 @@
 {
-  "name": "@kycell/cli",
-  "version": "1.0.0",
+  "name": "@kicell/cli",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -17,9 +17,19 @@
   ],
   "license": "MIT",
   "description": "Command-line interface for immersive text games",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moekiorg/kicell.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/moekiorg/kicell#readme",
+  "bugs": {
+    "url": "https://github.com/moekiorg/kicell/issues"
+  },
+  "author": "Moeki Kawakami",
   "dependencies": {
-    "@kycell/blueprint": "workspace:*",
-    "@kycell/engine": "workspace:*",
+    "@kicell/blueprint": "workspace:*",
+    "@kicell/engine": "workspace:*",
     "dotenv": "^16.5.0"
   },
   "devDependencies": {

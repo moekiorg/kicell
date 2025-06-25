@@ -1,4 +1,4 @@
-import { GameUIEvent } from "@kycell/engine";
+import { GameUIEvent } from "@kicell/engine";
 
 export function createUIEventHandler() {
   return (event: GameUIEvent) => {

@@ -1,4 +1,4 @@
-import { Blueprint, EntityId } from "@kycell/blueprint";
+import { Blueprint, EntityId } from "@kicell/blueprint";
 
 export interface GameContext {
   currentLocation: EntityId;

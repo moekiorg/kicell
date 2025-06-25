@@ -1,4 +1,4 @@
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Base class for all game objects (Inform 7 Thing equivalent)

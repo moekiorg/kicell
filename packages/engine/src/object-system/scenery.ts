@@ -1,5 +1,5 @@
 import { Thing } from "./thing.js";
-import { EntityId } from "@kycell/blueprint";
+import { EntityId } from "@kicell/blueprint";
 
 /**
  * Scenery class - things that are fixed decorative elements in rooms

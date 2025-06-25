@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@kycell/blueprint':
+      '@kicell/blueprint':
         specifier: workspace:*
         version: link:packages/blueprint
     devDependencies:
@@ -55,10 +55,10 @@ importers:
 
   packages/cli:
     dependencies:
-      '@kycell/blueprint':
+      '@kicell/blueprint':
         specifier: workspace:*
         version: link:../blueprint
-      '@kycell/engine':
+      '@kicell/engine':
         specifier: workspace:*
         version: link:../engine
       dotenv:
@@ -83,7 +83,7 @@ importers:
       '@google/generative-ai':
         specifier: ^0.24.1
         version: 0.24.1
-      '@kycell/blueprint':
+      '@kicell/blueprint':
         specifier: workspace:*
         version: link:../blueprint
       dotenv:

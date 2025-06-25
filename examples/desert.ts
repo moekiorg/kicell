@@ -1,4 +1,4 @@
-import { k } from "@kycell/blueprint";
+import { k } from "@kicell/blueprint";
 
 const start = k
   .room("unknown")

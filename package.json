@@ -1,13 +1,12 @@
 {
-  "name": "kycell",
-  "version": "1.0.0",
+  "name": "kicell",
+  "version": "0.1.1",
   "type": "module",
   "private": true,
   "workspaces": [
     "packages/blueprint",
     "packages/engine",
-    "packages/cli",
-    "packages/ai"
+    "packages/cli"
   ],
   "scripts": {
     "build": "pnpm -r build",
@@ -16,8 +15,8 @@
     "lint": "eslint packages/*/src/",
     "play": "tsx packages/cli/src/cli.ts",
     "compile": "node packages/blueprint/dist/cli.js",
-    "web": "pnpm --filter @kycell/web dev",
-    "web:build": "pnpm --filter @kycell/web build"
+    "web": "pnpm --filter @kicell/web dev",
+    "web:build": "pnpm --filter @kicell/web build"
   },
   "keywords": [
     "text-game",
@@ -28,7 +27,7 @@
   "license": "MIT",
   "description": "A CLI for creating immersive sim text games using natural language object definitions",
   "dependencies": {
-    "@kycell/blueprint": "workspace:*"
+    "@kicell/blueprint": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.0.3",
