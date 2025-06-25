@@ -1,0 +1,32 @@
+{
+  "name": "@kycell/engine",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "keywords": [
+    "text-game",
+    "game-engine",
+    "immersive-sim"
+  ],
+  "license": "MIT",
+  "description": "Game engine for executing immersive text game blueprints",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@kycell/blueprint": "workspace:*",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "eslint": "^9.29.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@kicell/blueprint",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "kicell-compile": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types/index.js",
+    "./compiler": "./dist/compiler.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "keywords": [
+    "text-game",
+    "blueprint",
+    "scenario",
+    "world-builder",
+    "compiler"
+  ],
+  "license": "MIT",
+  "description": "Blueprint system for creating text adventure game worlds with integrated compiler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moekiorg/kicell.git",
+    "directory": "packages/blueprint"
+  },
+  "homepage": "https://github.com/moekiorg/kicell#readme",
+  "bugs": {
+    "url": "https://github.com/moekiorg/kicell/issues"
+  },
+  "author": "Moeki Kawakami",
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "eslint": "^9.29.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "砂漠の海",
+    "author": "Moeki Kawakami",
+    "version": "1.0.0",
+    "initial_player_location": "unknown"
+  },
+  "entities": {
+    "locations": [
+      {
+        "id": "unknown",
+        "name": "砂漠の海",
+        "description": "砂の味がした。ずっと寝ていたようだ。周りを見渡すとそこは果てしない砂漠の中だった。丘の向こうに一本の木が見える",
+        "connections": [],
+        "properties": {
+          "is_outdoors": true
+        }
+      }
+    ],
+    "objects": [],
+    "characters": []
+  },
+  "rules": {
+    "action_rules": [],
+    "event_rules": []
+  }
+}
